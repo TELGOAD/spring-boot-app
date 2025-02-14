@@ -12,9 +12,6 @@ Solution: See this article
 Creating Container
 Run:
 
-bash
-Copy
-Edit
 mvn package
 Running Container
 docker container run --publish 8000:8000 aws-currency-exchange-service-h2:0.0.1-SNAPSHOT
