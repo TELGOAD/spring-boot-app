@@ -18,9 +18,7 @@ docker container run --publish 8000:8000 aws-currency-exchange-service-h2:0.0.1-
 docker run --publish 8000:8000 --network currency-network --name=currency-exchange-service aws-currency-exchange-service-h2:0.0.1-SNAPSHOT
 Test API
 http://localhost:8000/api/currency-exchange-microservice/currency-exchange/from/USD/to/INR
-docker login
-docker push @@@REPO_NAME@@@/aws-currency-exchange-service-h2:0.0.1-SNAPSHOT
-Resources
+
 http://localhost:8000/api/currency-exchange-microservice/currency-exchange/from/USD/to/INR
 {
   "id": 10001,
