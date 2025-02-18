@@ -14,15 +14,6 @@ docker run --publish 8000:8000 --network currency-network --name=currency-exchan
 # Test API
 ### http://localhost:8000/api/currency-exchange-microservice/currency-exchange/from/USD/to/INR
 
-### http://localhost:8000/api/currency-exchange-microservice/currency-exchange/from/USD/to/INR
-
-{
-  "id": 10001,
-  "from": "USD",
-  "to": "INR",
-  "conversionMultiple": 65.00,
-  "environmentInfo": "NA"
-}
 # H2 Console
 
 ### http://localhost:8000/api/currency-exchange-microservice/h2-console
@@ -31,7 +22,7 @@ Use jdbc:h2:mem:testdb as the JDBC URL.
 Tables Created
 sql
 create table exchange_value 
-
+```json
 (
 	id bigint not null, 
 	conversion_multiple decimal(19,2), 
@@ -39,3 +30,20 @@ create table exchange_value
 	currency_to varchar(255), 
 	primary key (id)
 )
+
+
+### http://localhost:8000/api/currency-exchange-microservice/currency-exchange/from/USD/to/INR
+
+
+
+{
+  "id": 10001,
+  "from": "USD",
+  "to": "INR",
+  "conversionMultiple": 65.00,
+  "environmentInfo": "NA"
+}
+
+
+
+
